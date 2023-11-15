@@ -1,6 +1,6 @@
 {
-  "name": "react-components-library",
-  "version": "0.0.1",
+  "name": "@jotazo/react-components-library",
+  "version": "0.0.2",
   "description": "React components library",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -25,5 +25,7 @@
     "tslib": "^2.6.2",
     "typescript": "^5.2.2"
   },
-  "type": "module"
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/Jotazo"
+  }
 }
