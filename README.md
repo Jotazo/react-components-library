@@ -56,7 +56,7 @@ El componente de cambio de tema se adapta a diferentes estilos según la variant
 
 ```jsx
 import React from "react";
-import { ThemeToggler } from "mi-libreria-react";
+import { ThemeToggler } from "@jotazo/react-components-library";
 
 function App() {
   return (
