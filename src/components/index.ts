@@ -1,1 +1,3 @@
-export { default as Button } from './Buttons/Button'
+import "../tailwind.css";
+
+export { default as ThemeToggler } from "./ThemeToggler/ThemeToggler";
