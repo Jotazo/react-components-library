@@ -5,22 +5,22 @@
 ## Índice
 
 1. [Estado del Proyecto](#estado-del-proyecto)
-2. [Instalación](#instalación)
+2. [Instalación](#instalacion)
 3. [Componentes](#componentes)
-   - [Componente ThemeToggler](#componente-theme-toggler)
+   - [Componente ThemeToggler](#componente-themetoggler)
      - [Descripción](#descripción)
      - [Configuración de Tailwind CSS](#configuración-de-tailwind-css)
      - [Uso del Componente](#uso-del-componente)
      - [Variantes](#variantes)
-       - [Por Defecto](#variante-por-defecto)
-       - [Animada](#variante-animada)
+       - [Por Defecto](#Por-defecto)
+       - [Animada](#animada)
 4. [Contribuciones](#contribuciones)
 
-## 1. Estado del Proyecto
+## Estado del Proyecto
 
 Actualmente, la librería se encuentra en fase de desarrollo activo. Estamos trabajando arduamente para agregar nuevas funcionalidades, mejorar la estabilidad y realizar ajustes según las necesidades de la comunidad.
 
-## 2. Instalación
+## Instalación
 
 1. Para comenzar a utilizar esta librería en tu proyecto de React, simplemente deberemos instalar la libreria con `npm` o `yarn`:
 
@@ -38,19 +38,19 @@ Actualmente, la librería se encuentra en fase de desarrollo activo. Estamos tra
    import { ThemeToggler } from "@jotazo/react-components-library";
    ```
 
-## 3. Componentes
+## Componentes
 
-### 3.1 Componente ThemeToggler
+### Componente ThemeToggler
 
-#### 3.1.1 Descripción
+#### Descripción
 
 El componente principal de esta librería es el "Cambiar Tema". Este componente te permite cambiar fácilmente entre un tema claro y oscuro en tu aplicación. La apariencia del componente varía según la variante que se le pase como prop.
 
-#### 3.1.2 Configuración de Tailwind CSS
+#### Configuración de Tailwind CSS
 
 Asegúrate de configurar tu proyecto con Tailwind CSS y de que la funcionalidad de modo oscuro (`darkMode`) esté habilitada. Puedes encontrar información detallada sobre cómo hacerlo en la [documentación oficial de Tailwind CSS](https://tailwindcss.com/docs/dark-mode).
 
-#### 3.1.3 Uso del Componente
+#### Uso del Componente
 
 El componente de cambio de tema se adapta a diferentes estilos según la variante que se le pase como prop. Puedes usarlo de la siguiente manera:
 
@@ -74,27 +74,28 @@ function App() {
 
 export default App;
 ```
-#### 3.1.4 Variantes
+### Variantes
+---
 
-##### 3.1.4.1 Variante por Defecto
+#### Por Defecto
 
 El componente se muestra como un switch simple que permite cambiar entre los modos claro y oscuro con un clic.
 
-- ## Light:
+- ### Claro:
   ![ThemeToggler-ClassicLight][ThemeToggler-ClassicLight]
-- ## Dark:
+- ### Oscuro:
   ![ThemeToggler-ClassicDark][ThemeToggler-ClassicDark]
 
-##### 3.1.4.2 Variante Animada
+#### Animada
 
 La variante animada incluye un icono y un texto que, al hacer clic sobre ellos, cambian su apariencia para indicar el cambio de tema de manera más visual y atractiva.
 
-- ## Light:
+- ### Claro:
   ![ThemeToggler-AnimatedLight][ThemeToggler-AnimatedLight]
-- ## Dark:
+- ### Oscuro:
   ![ThemeToggler-AnimatedDark][ThemeToggler-AnimatedDark]
 
-## 4. Contribuciones
+## Contribuciones
 
 ¡Agradecemos todas las contribuciones! Si encuentras algún problema, tienes ideas para nuevas características o mejoras, no dudes en abrir un problema o enviar una solicitud de extracción.
 
