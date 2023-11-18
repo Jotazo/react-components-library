@@ -44,7 +44,7 @@ Actualmente, la librería se encuentra en fase de desarrollo activo. Estamos tra
 
 #### Descripción
 
-El componente principal de esta librería es el "Cambiar Tema". Este componente te permite cambiar fácilmente entre un tema claro y oscuro en tu aplicación. La apariencia del componente varía según la variante que se le pase como prop.
+Este componente te permite cambiar fácilmente entre un tema claro y oscuro en tu aplicación. La apariencia del componente varía según la variante que se le pase como prop.
 
 #### Configuración de Tailwind CSS
 
