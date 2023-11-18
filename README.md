@@ -99,7 +99,7 @@ La variante animada incluye un icono y un texto que, al hacer clic sobre ellos, 
 
 ¡Agradecemos todas las contribuciones! Si encuentras algún problema, tienes ideas para nuevas características o mejoras, no dudes en abrir un problema o enviar una solicitud de extracción.
 
-Gracias por usar nuestra librería de componentes de React. ¡Esperamos que sea de gran utilidad para tu proyecto!
+Gracias por usar ésta librería de componentes de React. ¡Esperamos que sea de gran utilidad para tu proyecto!
 
 <!-- Screenshots -->
 
