@@ -14,6 +14,7 @@
      - [Variantes](#variantes)
        - [Por Defecto](#Por-defecto)
        - [Animada](#animada)
+       - [Icono](#icono)
 4. [Contribuciones](#contribuciones)
 
 ## Estado del Proyecto
@@ -95,6 +96,15 @@ La variante animada incluye un icono y un texto que, al hacer clic sobre ellos, 
 - ### Oscuro:
   ![ThemeToggler-AnimatedDark][ThemeToggler-AnimatedDark]
 
+#### Icono
+
+La variante de icono es una versión ***minificada*** de la variante [Animada](#animada) en la que se muestra exclusivamente el ícono. Al presionar sobre él, se produce un cambio en el tema.
+
+- ### Claro:
+  ![ThemeToggler-IconLight][ThemeToggler-IconLight]
+- ### Oscuro:
+  ![ThemeToggler-IconDark][ThemeToggler-IconDark]
+
 ## Contribuciones
 
 ¡Agradecemos todas las contribuciones! Si encuentras algún problema, tienes ideas para nuevas características o mejoras, no dudes en abrir un problema o enviar una solicitud de extracción.
@@ -107,3 +117,5 @@ Gracias por usar ésta librería de componentes de React. ¡Esperamos que sea de
 [ThemeToggler-ClassicDark]: ./screenshots/ThemeToggler/ClassicDark.png
 [ThemeToggler-AnimatedLight]: ./screenshots/ThemeToggler/AnimatedLight.png
 [ThemeToggler-AnimatedDark]: ./screenshots/ThemeToggler/AnimatedDark.png
+[ThemeToggler-IconLight]: ./screenshots/ThemeToggler/IconLight.png
+[ThemeToggler-IconDark]: ./screenshots/ThemeToggler/IconDark.png
