@@ -6,22 +6,25 @@ import { Themes } from "../enums";
 const useTheme = () => {
   const [theme, setTheme] = useState<Theme>(() => {
     const $html = document.querySelector("html");
-
-    const htmlHasClassAttribute = $html.hasAttribute("class");
-    const htmlClassValue = $html.getAttribute("class");
-
-    if (
-      !htmlHasClassAttribute ||
-      (htmlHasClassAttribute && htmlClassValue !== Themes.DARK)
-    ) {
-      return Themes.LIGHT;
-    }
+    const lastTheme = localStorage.getItem("theme");
 
     const prefersDark = window.matchMedia(
       "(prefers-color-scheme: dark)"
     ).matches;
-    prefersDark && $html.classList.add(Themes.DARK);
-    return prefersDark ? Themes.DARK : Themes.LIGHT;
+
+    if (
+      !lastTheme ||
+      (lastTheme !== Themes.DARK && lastTheme !== Themes.LIGHT)
+    ) {
+      prefersDark && $html.classList.add(Themes.DARK);
+      localStorage.setItem(
+        "lastTheme",
+        prefersDark ? Themes.DARK : Themes.LIGHT
+      );
+      return prefersDark ? Themes.DARK : Themes.LIGHT;
+    }
+
+    return lastTheme as Theme;
   });
 
   const toggleTheme = () => {
@@ -29,8 +32,10 @@ const useTheme = () => {
     setTheme((prevTheme) => {
       const isDarkMode = prevTheme === Themes.DARK;
       if (isDarkMode) {
+        localStorage.setItem("lastTheme", Themes.LIGHT);
         $html?.classList.remove(Themes.DARK);
       } else {
+        localStorage.setItem("lastTheme", Themes.DARK);
         $html?.classList.add(Themes.DARK);
       }
       return isDarkMode ? Themes.LIGHT : Themes.DARK;
