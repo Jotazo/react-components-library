@@ -5,10 +5,22 @@ import { Themes } from "../enums";
 
 const useTheme = () => {
   const [theme, setTheme] = useState<Theme>(() => {
+    const $html = document.querySelector("html");
+
+    const htmlHasClassAttribute = $html.hasAttribute("class");
+    const htmlClassValue = $html.getAttribute("class");
+
+    if (
+      !htmlHasClassAttribute ||
+      (htmlHasClassAttribute && htmlClassValue !== Themes.DARK)
+    ) {
+      return Themes.LIGHT;
+    }
+
     const prefersDark = window.matchMedia(
       "(prefers-color-scheme: dark)"
     ).matches;
-    prefersDark && document.querySelector("html")?.classList.add(Themes.DARK);
+    prefersDark && $html.classList.add(Themes.DARK);
     return prefersDark ? Themes.DARK : Themes.LIGHT;
   });
 
