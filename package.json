@@ -1,6 +1,6 @@
 {
   "name": "@jotazo/react-components-library",
-  "version": "0.0.16",
+  "version": "0.0.18",
   "repository": {
     "type": "git",
     "url": "https://github.com/Jotazo/react-components-library"
@@ -14,7 +14,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "rollup": "rollup -c",
-    "prepare": "rm -rf dist && npm run rollup"
+    "prepare": "rm -rf dist && npm run rollup",
+    "cust:publish": "npm run prepare && npm publish"
   },
   "keywords": [],
   "author": "Javier Guerrero",
